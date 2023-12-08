@@ -1,0 +1,349 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #170404;
+    border-radius: 2.5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(14, 184, 222);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(92, 28, 176);
+    
+  }
+
+body {
+    margin  : 0 ;
+    padding : 0 ;
+    display: flex;
+    overflow: hidden;
+}
+.channelsBar{
+    width: 100px;
+    height: 700px;
+    margin-top:8px;
+    background-color: rgb(64, 71, 78);
+    border-radius: 20px;
+    transform: translate(-2%,0%);
+    padding: 2px;
+    z-index: 1;
+}
+
+.channels{
+    cursor: pointer;
+    transform: translate(10%,0%);
+    background-color:aliceblue;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-content: center;
+    transition-duration: 0.5s;
+}
+
+.channels:hover, .featuresButton:hover, .features:hover{
+    background-color: rgb(171, 236, 236);
+}
+.channels:active, .featuresButton:active{
+    background-color: aqua;
+    font-size: small;
+}
+
+.channels h1{
+    transform: translate(0%, 30%);
+    background-color: transparent;
+}
+
+
+
+.optionsButton{
+    display: flex;
+    top: 50px;
+    left: 50px;
+    width: 80px;
+    /* width: 280px; */
+    height: 80px;
+    border-radius: 40px;
+    margin-top: 550px;
+    margin-left: -40px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+}
+
+.optionsButton:hover, .profile:hover, .settings:hover{
+    background-color: rgba(186, 235, 235, 0.701);
+}
+
+.options{
+    display: flex;
+    background-color: rgba(65, 149, 223, 0.283);
+    transform: translate(-4%, 765%);
+
+    width: 220px;
+    height: 80px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left: 80px; */
+    margin-left: 6px;
+    font-size: 30px;
+    color: white;
+    animation-name: slide;
+    animation-duration: 1s;
+    /* z-index: -1; */
+}
+
+@keyframes slide {
+    from{
+        width:0px;
+    }
+    to{
+        width: 220px;
+    }
+    
+}
+.profile{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.settings{
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.theme{
+    cursor: pointer;
+}
+.chatBar{
+    width: 400px;
+    height: 700px;
+    margin-top:8px;
+    background-color: rgba(148, 171, 194, 0.406);
+    border-radius: 20px;
+    transform: translate(25%,0%);
+    padding: 2px;
+    text-align: center;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    position: fixed;
+} 
+
+.featuresButton{
+    position: fixed;
+    cursor: pointer;
+    transform: translate(1850%,-30%);
+    background-color:rgb(54, 126, 199);
+    width: 80px;
+    height: 80px;
+    /* max-width: fit-content;
+    max-height: fit-content; */
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.features{
+    position: fixed;
+    justify-content: center;
+    background-color:rgb(65, 149, 223);
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+
+#f1{
+    transform: translate(2300%,0%);
+    animation-name: popUp1;
+    animation-duration: 1s;
+}
+    
+#f2{
+    transform: translate(2320%,120%);
+    animation-name: popUp2;
+    animation-duration: 1s;
+    
+}
+#f3{
+    transform: translate(2450%,150%);
+    animation-name: popUp3;
+    animation-duration: 1s;
+}
+
+.notes{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(65, 149, 223);
+    border-top-left-radius: 20px;
+    transform: translate(410%,100%);
+    position: fixed;
+    padding: 10px;
+    
+    justify-content: space-evenly;
+    animation-name: noteSlide;
+    animation-duration: 1s;
+    
+}
+
+.notes h4{
+    height:150px ;
+    overflow-y: auto;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+.notes button{
+    background-color: rgb(209, 55, 226);
+    border: 1px solid;
+    transform: translate(20%, -5%);
+    height: 30px;
+    border-radius: 15px;
+}
+
+.notes button:hover{
+    background-color: rgb(209, 135, 217);
+}
+.cnt{
+    display: flex;
+}
+#trash{
+    cursor: pointer;
+    height:30px;
+    transform: translate(160%, 0%);
+}
+
+#trash:hover{
+    color: white;
+}
+
+@keyframes  noteSlide{
+    from{
+        transform: translate(500%,100%);
+    }
+    to{
+        transform: translate(410%,100%);
+    }
+}
+input{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    height:30px
+}
+
+.library button{
+    border-radius: 50%;
+    transform: translate(20%, 0%);
+    background-color: transparent;
+    border: 1px solid black;
+    height:30px
+}
+.library button:hover{
+    background-color: rgba(240, 248, 255, 0.29);
+}
+.libraryBar{
+    width: 450px;
+    background-color: rgb(64, 71, 78);
+    border-radius: 20px;
+    max-height: 100%;
+    left: 520px;
+    /* padding: 2px; */
+    text-align: center;
+    position: fixed;
+    align-items: center;
+    overflow: auto;
+}
+.libraryButtons{
+    display: flex;
+    justify-content:space-evenly;
+}   
+.libraryButton{
+    color: rgb(27, 96, 201);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.libraryButton:hover{
+    color: white;
+}
+
+@keyframes popUp1 {
+    from{
+        transform: translate(2300%,-300%);
+    }
+    to{
+        transform: translate(2300%,0%);
+    }
+}
+@keyframes popUp2 {
+    from{
+        transform: translate(2300%,-200%);
+    }
+    to{
+        transform: translate(2320%,120%);
+    }
+}
+@keyframes popUp3 {
+    from{
+        transform: translate(2300%,-100%);
+    }
+    to{
+        transform: translate(2450%,150%);
+    }
+}
+@keyframes slideIn {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
